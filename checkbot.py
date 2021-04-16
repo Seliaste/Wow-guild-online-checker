@@ -83,7 +83,7 @@ async def on_message(message):
             if howlongago <= 36000:
                 returnmsg += i[0]+" has been seen: " + \
                     str(round(howlongago/60))+" minutes ago , "
-
+        threadreturnlist = []
         await message.channel.send(returnmsg)
 
 client.run(discordToken)
